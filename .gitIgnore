@@ -1,0 +1,34 @@
+# === Build / Saída do compilador ===
+bin/
+*.prg
+*.iq
+*.prg.debug.xml
+*.debug.xml
+
+# === Arquivos do VS Code (exceto configurações úteis) ===
+.vscode/*
+!.vscode/settings.json
+!.vscode/launch.json
+!.vscode/tasks.json
+!.vscode/extensions.json
+
+# === Monkey C / SDK ===
+monkey.jungle.bak
+*.jungle.bak
+.sdk/
+
+# === Sistema Operacional ===
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# === Chaves e certificados de desenvolvedor (NUNCA commitar) ===
+*.der
+*.pem
+*.key
+developer_key
+*.p12
+
+# === Logs e caches ===
+*.log
+.cache/
