@@ -2,4 +2,10 @@
     <bitmap id="LauncherIcon" filename="launcher_icon.svg" dithering="none" />
 
     <bitmap id="bg_gradient" filename="bg-gradient.png" />
+
+    <bitmap id="img_add_water" filename="add-water.svg" />
+    <bitmap id="img_goal" filename="goal.svg" />
+    <bitmap id="img_calculator" filename="calculator.svg" />
+    <bitmap id="img_settings" filename="settings.svg" />
+    <bitmap id="img_exit" filename="exit.svg" />
 </drawables>

@@ -33,7 +33,8 @@ class SettingsDelegate extends WatchUi.BehaviorDelegate {
         if (index == 0) {
             WatchUi.pushView(new NotifyView(), new NotifyDelegate(), WatchUi.SLIDE_LEFT);
         } else if (index == 1) {
-            WatchUi.pushView(new LanguageView(), new LanguageDelegate(), WatchUi.SLIDE_LEFT);
+            var langView = new LanguageView();
+            WatchUi.pushView(langView, new LanguageDelegate(langView), WatchUi.SLIDE_LEFT);
         } else if (index == 2) {
             var resetView = new ResetProgressView();
             WatchUi.pushView(resetView, new ResetProgressDelegate(resetView), WatchUi.SLIDE_LEFT);

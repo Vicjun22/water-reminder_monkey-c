@@ -3,7 +3,7 @@ using Toybox.System;
 
 class WaterDelegate extends WatchUi.BehaviorDelegate {
 
-    var view;
+    var view as WaterView;
 
     function initialize(v) {
         BehaviorDelegate.initialize();
@@ -19,7 +19,7 @@ class WaterDelegate extends WatchUi.BehaviorDelegate {
     }
 
     function onNextPage() {
-        if (view.selectedIndex < view.menuItems.size() - 1) {
+        if (view.selectedIndex < view.getMenuCount() - 1) {
             view.selectedIndex += 1;
             WatchUi.requestUpdate();
         }

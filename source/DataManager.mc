@@ -9,10 +9,13 @@ class DataManager {
     static var KEY_LAST_DATE = "lastDate";
     static var KEY_ADD_STEP = "addStepMl";
     static var KEY_NOTIFY_HOUR = "notifyHour";
+    static var KEY_LANGUAGE = "appLanguage";
+    static var KEY_WEIGHT = "weight";
 
     static var DEFAULT_GOAL = 2000;
     static var DEFAULT_ADD_STEP = 250;
     static var DEFAULT_NOTIFY_HOUR = 22;
+    static var DEFAULT_WEIGHT = 70;
 
     static function getTodayValue() {
         return Time.today().value();
@@ -74,5 +77,22 @@ class DataManager {
         if (goal <= 0) { return 0; }
         var pct = (getCurrent() * 100) / goal;
         return (pct > 100) ? 100 : pct;
+    }
+
+    static function getWeight() {
+        var w = Storage.getValue(KEY_WEIGHT);
+        return (w != null) ? w : DEFAULT_WEIGHT;
+    }
+
+    static function setWeight(w) {
+        Storage.setValue(KEY_WEIGHT, w);
+    }
+
+    static function getSavedLanguage() {
+        return Storage.getValue(KEY_LANGUAGE);
+    }
+
+    static function setSavedLanguage(lang) {
+        Storage.setValue(KEY_LANGUAGE, lang);
     }
 }
