@@ -5,8 +5,11 @@ class TranslationManager {
 
     static function getLanguage() {
         var lang = DataManager.getSavedLanguage();
+        
+        var por = lang.equals("por");
+        var eng = lang.equals("eng");
 
-        if (lang == null || (!lang.equals("por") && !lang.equals("eng"))) {
+        if (lang == null || (!por && !eng)) {
             return "por";
         }
 
@@ -47,6 +50,14 @@ class TranslationManager {
             return "Meta: $1$ml";
         } else if (key == :weight) {
             return "Peso: $1$kg";
+        } else if (key == :notifications) {
+            return "Notificações";
+        } else if (key == :resetProgress) {
+            return "Limpar progresso";
+        } else if (key == :appVersion) {
+            return "Versão do app";
+        } else if (key == :background) {
+            return "Plano de fundo";
         } else {
             return "";
         }
@@ -79,6 +90,14 @@ class TranslationManager {
             return "Goal: $1$ml";
         } else if (key == :weight) {
             return "Weight: $1$kg";
+        } else if (key == :notifications) {
+            return "Notifications";
+        } else if (key == :resetProgress) {
+            return "Reset progress";
+        } else if (key == :appVersion) {
+            return "App version";
+        } else if (key == :background) {
+            return "Background";
         } else {
             return "";
         }

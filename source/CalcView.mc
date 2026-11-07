@@ -16,7 +16,7 @@ class CalcView extends WatchUi.View {
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
         dc.clear();
 
-        var weight = Storage.getValue("initialValue");
+        var weight = DataManager.getWeight();
         if (weight == null) { weight = 70; }
         var needMl = weight * 35;
 

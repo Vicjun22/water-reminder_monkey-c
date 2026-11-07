@@ -8,35 +8,36 @@ class CalcDelegate extends WatchUi.BehaviorDelegate {
 
     function initialize() {
         BehaviorDelegate.initialize();
+        DataManager.setWeight(DataManager.getWeight());
         Storage.setValue("initialValue", Storage.getValue("calcWeight"));
     }
 
     function onNextPage() {
-        var w = Storage.getValue("initialValue");
+        var w = DataManager.getWeight();
         if (w == null) { w = 70; }
         w = w - 1;
         if (w < 30) { w = 30; }
         
-        Storage.setValue("initialValue", w);
+        DataManager.setWeight(w);
         WatchUi.requestUpdate();
         return true;
 
     }
 
     function onPreviousPage() {
-        var w = Storage.getValue("initialValue");
+        var w = DataManager.getWeight();
         if (w == null) { w = 70; }
         w = w + 1;
         if (w > 150) { w = 150; }
 
-        Storage.setValue("initialValue", w);
+        DataManager.setWeight(w);
         WatchUi.requestUpdate();
         return true;
     }
 
     function onSelect() {
-        var w = Storage.getValue("initialValue");
-        Storage.setValue("calcWeight", w);
+        var w = DataManager.getWeight();
+        DataManager.setWeight(w);
         if (w == null) { w = 70; }
         DataManager.setGoal(w * 35);
         

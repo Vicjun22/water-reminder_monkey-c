@@ -1,10 +1,8 @@
 using Toybox.WatchUi;
-using Toybox.Timer;
-using Toybox.Application.Storage;
 
 class SettingsDelegate extends WatchUi.BehaviorDelegate {
 
-    var view;
+    var view as SettingsView;
 
     function initialize(v) {
         BehaviorDelegate.initialize();
@@ -15,13 +13,19 @@ class SettingsDelegate extends WatchUi.BehaviorDelegate {
         if (view.selectedIndex > 0) {
             view.selectedIndex -= 1;
             WatchUi.requestUpdate();
+        } else {
+            view.selectedIndex = view.getMenuCount() - 1;
+            WatchUi.requestUpdate();
         }
         return true;
     }
 
     function onNextPage() {
-        if (view.selectedIndex < view.settingItems.size() - 1) {
+        if (view.selectedIndex < view.getMenuCount() - 1) {
             view.selectedIndex += 1;
+            WatchUi.requestUpdate();
+        } else {
+            view.selectedIndex = 0;
             WatchUi.requestUpdate();
         }
         return true;

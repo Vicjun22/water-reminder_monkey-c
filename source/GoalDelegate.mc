@@ -11,7 +11,7 @@ class GoalDelegate extends WatchUi.BehaviorDelegate {
 
     function onNextPage() {
         var g = Storage.getValue("initialValue") - 100;
-        if (g > 5000) { g = 5000; }
+        if (g > 5250) { g = 5250; }
 
         Storage.setValue("initialValue", g);
         WatchUi.requestUpdate();
@@ -20,7 +20,7 @@ class GoalDelegate extends WatchUi.BehaviorDelegate {
 
     function onPreviousPage() {
         var g = Storage.getValue("initialValue") + 100;
-        if (g > 5000) { g = 5000; }
+        if (g > 5250) { g = 5250; }
         
         Storage.setValue("initialValue", g);
         WatchUi.requestUpdate();
@@ -29,7 +29,7 @@ class GoalDelegate extends WatchUi.BehaviorDelegate {
 
     function onSelect() {
         var g = Storage.getValue("initialValue");
-        if (g > 5000) { g = 5000; }
+        if (g > 5250) { g = 5250; }
         DataManager.setGoal(g);
         
         WatchUi.pushView(new SuccessView(), new SuccessDelegate(), WatchUi.SLIDE_LEFT);

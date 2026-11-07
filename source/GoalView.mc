@@ -17,7 +17,7 @@ class GoalView extends WatchUi.View {
 
         var goal = Storage.getValue("initialValue");
         if (goal == null) { goal = 1000; }
-        else if (goal > 5000) { goal = 5000; }
+        else if (goal > 5250) { goal = 5250; }
 
         var headerPositionY = 110;
         dc.drawText(centerX, headerPositionY, Graphics.FONT_SMALL, "Ajustar Meta", Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
