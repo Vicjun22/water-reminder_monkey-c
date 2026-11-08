@@ -29,7 +29,7 @@ class SettingsView extends WatchUi.View {
         var centerX = width / 2;
         var centerY = height / 2;
 
-        defaultView.drawBackground(dc);
+        defaultView.drawDefaultBackground(dc);
 
         // --- Cabeçalho ---
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
