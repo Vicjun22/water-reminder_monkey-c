@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="80"
+    height="80"
+    viewBox="0 0 80 80">
+
+    <g
+        fill="none"
+        stroke="#FFFFFF"
+        stroke-width="4"
+        stroke-linecap="round"
+        stroke-linejoin="round">
+
+        <!-- Cabo -->
+        <path d="M50 10 L30 38"/>
+
+        <!-- Cerdas -->
+        <path d="M18 42
+                 C12 48 11 58 14 68
+                 H44
+                 C40 59 38 50 34 42
+                 Z"/>
+
+        <!-- Faixas das cerdas -->
+        <path d="M21 48 H36"/>
+        <path d="M19 56 H39"/>
+        <path d="M17 64 H42"/>
+
+        <!-- Poeira -->
+        <path d="M58 24 H68"/>
+        <path d="M54 34 H64"/>
+        <path d="M62 42 H72"/>
+
+    </g>
+</svg>

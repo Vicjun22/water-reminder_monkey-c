@@ -38,7 +38,6 @@ class WaterDelegate extends WatchUi.BehaviorDelegate {
     }
 
     function onSelect() {
-
         view.menus[view.selectedIndex]
             .actionCallback
             .invoke();

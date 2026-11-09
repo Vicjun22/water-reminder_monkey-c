@@ -1,7 +1,4 @@
 using Toybox.WatchUi;
-using Toybox.Graphics;
-using Toybox.Application.Storage;
-import Toybox.Lang;
 
 class CalcDelegate extends WatchUi.BehaviorDelegate {
 
@@ -9,7 +6,6 @@ class CalcDelegate extends WatchUi.BehaviorDelegate {
     function initialize() {
         BehaviorDelegate.initialize();
         DataManager.setWeight(DataManager.getWeight());
-        Storage.setValue("initialValue", Storage.getValue("calcWeight"));
     }
 
     function onNextPage() {

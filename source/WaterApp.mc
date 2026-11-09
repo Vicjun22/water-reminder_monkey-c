@@ -36,8 +36,8 @@ class WaterApp extends Application.AppBase {
     }
 
     function getInitialView() {
-        var view = new WaterView();
-        var delegate = new WaterDelegate(view);
+        var view = new NotificationsView();
+        var delegate = new NotificationsDelegate(view);
         return [view, delegate];
     }
 }

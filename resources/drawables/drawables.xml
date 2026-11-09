@@ -1,11 +1,16 @@
 <drawables xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://developer.garmin.com/downloads/connect-iq/resources.xsd">
     <bitmap id="LauncherIcon" filename="launcher_icon.svg" dithering="none" />
 
-    <bitmap id="bg_gradient" filename="bg-gradient.png" />
+    <bitmap id="bg_gradient" filename="bg-gradient.svg" />
 
     <bitmap id="img_add_water" filename="add-water.svg" />
     <bitmap id="img_goal" filename="goal.svg" />
     <bitmap id="img_calculator" filename="calculator.svg" />
     <bitmap id="img_settings" filename="settings.svg" />
     <bitmap id="img_exit" filename="exit.svg" />
+
+    <bitmap id="img_notify" filename="notify.svg" />
+    <bitmap id="img_language" filename="language.svg" />
+    <bitmap id="img_reset_progress" filename="reset-progress.svg" />
+    <bitmap id="img_background" filename="background.svg" />
 </drawables>

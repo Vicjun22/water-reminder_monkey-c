@@ -16,7 +16,9 @@ class DefaultView {
 
         drawBackground(dc, width, height);
         drawArc(dc, width, centerX, centerY);
-        drawMenuIndicator(dc, selectedIndex, totalMenus);
+        if (totalMenus != null) {
+            drawMenuIndicator(dc, selectedIndex, totalMenus);
+        }
     }
 
 

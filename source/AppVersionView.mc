@@ -1,7 +1,7 @@
 using Toybox.WatchUi;
 using Toybox.Graphics;
 
-class VersionsView extends WatchUi.View {    
+class AppVersionView extends WatchUi.View {    
 
     function initialize() {
         View.initialize();

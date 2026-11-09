@@ -58,6 +58,8 @@ class TranslationManager {
             return "Versão do app";
         } else if (key == :background) {
             return "Plano de fundo";
+        } else if (key == :customized) {
+            return "Personalizado";
         } else {
             return "";
         }
@@ -98,6 +100,8 @@ class TranslationManager {
             return "App version";
         } else if (key == :background) {
             return "Background";
+        } else if (key == :customized) {
+            return "Customized";
         } else {
             return "";
         }

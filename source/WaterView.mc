@@ -99,6 +99,7 @@ class WaterView extends WatchUi.View {
         System.exit();
     }
 
+
     function menuAddWater(dc, centerX, centerY, menu) {
         var pct = DataManager.getPercent();
 
@@ -142,7 +143,7 @@ class WaterView extends WatchUi.View {
     function menuSettings(dc, centerX, centerY, menu) {
         var iconWidth = menu.icon.getWidth();
         var iconHeight = menu.icon.getHeight();
-        dc.drawBitmap(centerX - (iconWidth / 2) - 20, centerY - (iconHeight / 2), menu.icon);
+        dc.drawBitmap(centerX - (iconWidth / 2) - 10, centerY - (iconHeight / 2), menu.icon);
 
         dc.drawText(centerX, 280, Graphics.FONT_SMALL, menu.title, Graphics.TEXT_JUSTIFY_CENTER);
     }
@@ -150,7 +151,7 @@ class WaterView extends WatchUi.View {
     function menuExit(dc, centerX, centerY, menu) {
         var iconWidth = menu.icon.getWidth();
         var iconHeight = menu.icon.getHeight();
-        dc.drawBitmap(centerX - (iconWidth / 2) - 20, centerY - (iconHeight / 2), menu.icon);
+        dc.drawBitmap(centerX - (iconWidth / 2), centerY - (iconHeight / 2), menu.icon);
 
         dc.drawText(centerX, 280, Graphics.FONT_SMALL, menu.title, Graphics.TEXT_JUSTIFY_CENTER);
     }

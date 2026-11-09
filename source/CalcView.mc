@@ -1,6 +1,5 @@
 using Toybox.WatchUi;
 using Toybox.Graphics;
-using Toybox.Application.Storage;
 import Toybox.Lang;
 
 class CalcView extends WatchUi.View {
