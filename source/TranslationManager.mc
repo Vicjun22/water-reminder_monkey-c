@@ -60,6 +60,12 @@ class TranslationManager {
             return "Plano de fundo";
         } else if (key == :customized) {
             return "Personalizado";
+        } else if (key == :start) {
+            return "Início";
+        } else if (key == :end) {
+            return "Fim";
+        } else if (key == :interval) {
+            return "Intervalo";
         } else {
             return "";
         }
@@ -102,6 +108,12 @@ class TranslationManager {
             return "Background";
         } else if (key == :customized) {
             return "Customized";
+        } else if (key == :start) {
+            return "Start";
+        } else if (key == :end) {
+            return "End";
+        } else if (key == :interval) {
+            return "Interval";
         } else {
             return "";
         }

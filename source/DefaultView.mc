@@ -62,4 +62,26 @@ class DefaultView {
             }
         }
     }
+
+    function drawRow(dc, y, text, value, selected, blocked) {
+        var width = dc.getWidth();
+        var rowHeight = 46;
+
+        if (selected) {
+            dc.setColor(0x38E8F7, 0x38E8F7);
+            dc.fillRectangle(0, y + 8, width, rowHeight);
+
+            dc.setColor(0x123259, 0x123259);
+            dc.fillRectangle(0, y + 11, width, rowHeight - 6);
+        }
+
+        if (blocked) {
+            dc.setColor(Graphics.COLOR_DK_GRAY, Graphics.COLOR_TRANSPARENT);
+        } else {
+            dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+        }
+        
+        dc.drawText(35, y + 11, Graphics.FONT_TINY, text, Graphics.TEXT_JUSTIFY_LEFT);
+        dc.drawText(width - 35, y + 11, Graphics.FONT_TINY, value, Graphics.TEXT_JUSTIFY_RIGHT);
+    }
 }
